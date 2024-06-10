@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Influencers</title>
+    <link rel="stylesheet" href="./allcampaign.css">
+    <link rel="stylesheet" href="view-influ.css">
+    <link rel="stylesheet" href="response.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <!-- popup option -->
+    <div class="popup-con">
+    </div>
+
+    <!-- suspence popup -->
+    <div class="suspence">
+    </div>
+    <div class="sidebar">
+        <div>
+            <div class="heading">
+                <div class="company">
+                    <span><i class="fa-solid fa-desktop"></i> </span><h2>Company Name</h2>
+                </div>
+                <p>Manager</p>
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="active"><span><i class="fa-solid fa-house"></span></i> <span class="sm-hide">Influencers</span></a></li>
+                <li><a href="/New Campaign overview/campaign.html"><span><i class="fa-solid fa-chart-line"></i></span> <span class="sm-hide">Campaign</span></a></li>
+                <li><a href="#"><span><i class="fa-regular fa-credit-card"></i></span> <span class="sm-hide">Credit Management</span></a></li>
+                <li><a href="#"><span><i class="fa-solid fa-gear"></i></span> <span class="sm-hide">Settings</span></a></li>
+            </ul>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/40" alt="Profile Picture">
+            <span>Gavano</span>
+            <span style="margin-left: 50px; font-size: 24px; color: black; cursor: pointer; position: relative; bottom: 5px;">...</span>
+        </div>
+    </div>
+    <div class="content">
+        <header>
+            <div class="search-sort">
+                <div class="searchandsort">
+                    <input type="text" placeholder="Search" class="search">
+                    <select>
+                        <option value="sort">Sort by</option>
+                        <option value="date">Date</option>
+                        <option value="name">Name</option>
+                    </select>
+                    <div class="mail-notification">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="new-campain">
+            <div class="des-links">
+                <a href="#">All Influencers (250)</a>
+            </div>
+            <des class="des-search">
+                <div class="des-search-left">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search on going campaigns">
+                    <button>Search</button>
+                </div>
+                <div class="des-filter">
+                    <span><i class="fa-solid fa-filter"></i> Filter</span>
+                    <select name="" id="">
+                        <option value="Gender">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="Age">Age</option>
+                        <option value="18-24">18-24</option>
+                        <option value="25-34">25-34</option>
+                        <option value="v">35-44</option>
+                        <option value="45+">45+</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="By Both">By Both</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="TikTok">TikTok</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="Category">Category</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Fashion">Fashion</option>
+                        <option value="Care - Make-up">Care - Make-up</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Gezi">Gezi</option>
+                        <option value="Mother-child">Mother-child</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Economy">Economy</option>
+                        <option value="Food">Food</option>
+                        <option value="Movie - TV Series">Movie - TV Series</option>
+                        <option value="Pet">Pet</option>
+                        <option value="Discount">Discount</option>
+                        <option value="Decoration">Decoration</option>
+                        <option value="Celebrity">Celebrity</option>
+                        <option value="Magazine">Magazine</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="On going">Active</option>
+                        <option value="All">All</option>
+                        <option value="Passed">Suspend</option>
+                    </select>
+                </div>
+            </des>
+            <div class="influ-profiles">
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="influ-container">
+                    <div class="top-profile">
+                        <div class="circle"></div>
+                        <div class="squre"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <div class="view-profile" id="view-profile">
+                        <span>View Profile</span><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="contact-info">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="name">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender">
+                            <div class="ins">
+                                <img src="insta.webp" alt="" width="20px" height="20px"> <span>8k Followers</span>
+                            </div>
+                            <div class="tik">
+                                <img src="tiktok.png" alt=""width="20px" height="22px"> <span>0 Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            </div>
+    </div>
+    </div>
+    <script src="campaign.js"></script>
+    <script src="view-influ.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    // Function to create the popup-con content
+    function createPopupContent() {
+        const popupCon = document.querySelector('.popup-con');
+        
+        popupCon.innerHTML = `
+            <div class="container1">
+                <div class="influ-container1">
+                    <div class="top-profile1">
+                        <div class="circle1"></div>
+                        <div class="squre1"></div>
+                        <img src="profile1.jpg" alt="">
+                    </div>
+                    <i class="fa-solid fa-xmark" id="close-popup"></i>
+                    <div class="contact-info1">
+                        <div class="phone1">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <p>Mobile no: <span>+91 1234567890</span></p>
+                        </div>
+                        <div class="email1">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>Email ID: <span>abcdxyz@gmail.com</span></p>
+                        </div>
+                    </div>
+                    <div class="personal-info1">
+                        <div class="name1">
+                            <h2>John Doe</h2>
+                        </div>
+                        <div class="age-gender1">
+                            <p>Age: <span>25</span></p>
+                            <p>Gender: <span>Male</span></p>
+                        </div>
+                    </div>
+                    <div class="social-media1">
+                        <div class="instagram1">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                            <div class="inputs11">
+                                <label>User name: </label>
+                                <input type="text">
+                            </div>
+                            <div class="inputs21">
+                                <label>No. of followers: </label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="tiktok1">
+                            <i class="fa-brands fa-tiktok"></i> Tik Tok
+                            <div class="inputs11">
+                                <label>User name: </label>
+                                <input type="text">
+                            </div>
+                            <div class="inputs21">
+                                <label>No. of followers: </label>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promote1">
+                        <div class="promo-title1">
+                            <h4>Field of Interest to promote:</h4>
+                        </div>
+                        <div class="promo-list1">
+                            <ul>
+                                <li>Food</li>
+                                <li>Travel</li>
+                                <li>Sports</li>
+                                <li>Fitness</li>
+                                <li>Online games</li>
+                                <li>Offline games</li>
+                                <li>Gym</li>
+                            </ul>
+                        </div>
+                        <div class="promo-next1" onclick="scrollPromoList()">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="credit1">
+                        <h4>Credits:</h4>
+                        <div class="credit-score1 flex1">
+                            <p>Credit Score</p>
+                            <input type="text" placeholder="10,000 pts">
+                        </div>
+                        <div class="earnings1 flex1">
+                            <p>Earnings</p>
+                            <input type="text" placeholder="$5,000">
+                        </div>
+                        <div class="gifts1 flex1">
+                            <p>Gifts</p>
+                            <input type="text" placeholder="10">
+                        </div>
+                    </div>
+                    <div class="bottom-promotion1">
+                        <div class="b-promo-title1">
+                            <p>Complete Promotion: <span>5</span></p>
+                            <p>Current Promotion: <span>1</span></p>
+                            <p>Rejected Promotion: <span>1</span></p>
+                        </div>
+                        <div class="sus-btn1">
+                            <a id="view-sus" style="cursor: pointer;">Suspend</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Function to create the suspence content
+    function createSuspenceContent() {
+        const suspence = document.querySelector('.suspence');
+        
+        suspence.innerHTML = `
+            <div class="body">
+                <div class="containe2">
+                    <h2>Reason to suspend</h2>
+                    <form>
+                        <label><input type="checkbox" name="reason" value="inappropriate_details"> Inappropriate details</label>
+                        <label><input type="checkbox" name="reason" value="not_satisfied"> Not satisfied with the performance</label>
+                        <label><input type="checkbox" name="reason" value="misleading_campaign"> Misleading Campaign</label>
+                        <div class="buttons2">
+                            <button type="button" class="close" id="close-sus">Close</button>
+                            <button type="button" class="submit" onclick="window.location.href = '/All influencers/allcampaign.html';">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        `;
+    }
+
+    createPopupContent();
+    createSuspenceContent();
+
+    const viewProfileButtons = document.querySelectorAll('#view-profile');
+    const closePopupButton = document.getElementById('close-popup');
+    const viewSusButton = document.getElementById('view-sus');
+    const closeSusButton = document.getElementById('close-sus');
+    const popupContainer = document.querySelector('.popup-con');
+    const susContainer = document.querySelector('.suspence');
+    const sidebar = document.querySelector('.sidebar');
+    const content = document.querySelector('.content');
+
+    // Function to show the popup
+    function showPopup() {
+        popupContainer.style.display = 'block';
+        sidebar.style.filter = 'blur(5px)';
+        content.style.filter = 'blur(5px)';
+    }
+
+    // Function to hide the popup
+    function hidePopup() {
+        popupContainer.style.display = 'none';
+        sidebar.style.filter = 'none';
+        content.style.filter = 'none';
+    }
+
+    // Function to show the suspence container
+    function showSus() {
+        susContainer.style.display = 'block';
+        popupContainer.style.filter = 'blur(5px)';
+    }
+
+    // Function to hide the suspence container
+    function hideSus() {
+        susContainer.style.display = 'none';
+        popupContainer.style.filter = 'none';
+    }
+
+    // Add event listeners to the view profile buttons
+    viewProfileButtons.forEach(button => {
+        button.addEventListener('click', showPopup);
+    });
+
+    // Add event listener to the close popup button
+    closePopupButton.addEventListener('click', hidePopup);
+
+    // Add event listener to the view suspence button
+    viewSusButton.addEventListener('click', showSus);
+
+    // Add event listener to the close suspence button
+    closeSusButton.addEventListener('click', hideSus);
+});
+
+    </script>
+</body>
+</html>

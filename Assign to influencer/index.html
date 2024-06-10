@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assigned Influencer - Round Trip to Ladakh</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        background-color: #fff7f5;
+    }
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        /* overflow: hidden; */
+        padding: 20px;
+    }
+    .header {
+        background: #ffe9e3;
+        padding: 20px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: centers;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 20px;
+        color: #333;
+    }
+    .header p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #666;
+    }
+    .header i{
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .assign-button {
+        display: block;
+        /* width: 200px;
+        margin: 20px auto; */
+        padding: 16px 20px;
+        background: #28a745;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0;
+    }
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background: #f4f4f4;
+    }
+    tr:hover {
+        background: #f1f1f1;
+    }
+    .accepted {
+        color: green;
+    }
+    .rejected {
+        color: red;
+    }
+    .reason {
+        width: 20%;
+    }
+    .overflow-style{
+        width: 100%;
+        overflow: auto;
+    }
+    span{
+        font-weight: 300;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: centers;
+        margin: 20px 0px;
+    }
+    /* Target smaller screens first */
+@media screen and (max-width: 768px) {
+    .header h1{
+        font-size: 14px;
+    }
+    header p{
+        font-size: 14px;
+    }
+    .assign-button{
+        font-size: 12px;
+        padding: 14px 10px;
+    }
+    .header i{
+        position: relative;
+        top: 0px;
+    }
+    @media only screen and (min-width: 200px) and (max-width: 400px) {
+        .header i{
+            position: relative;
+            top: 10px;
+        }
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Assigned Influencer - <span>Round Trip to Ladakhs</span></h1>
+        <i class="fa-solid fa-xmark" onclick="window.location.href = '/New Campaign  details/campaign.html';"></i>
+    </div>
+    <header>
+        <p>No. of influencer (40)</p>
+        <a href="#" class="assign-button">Assign more influencer</a>
+    </header>
+    <div class="overflow-style">
+        <table>
+            <thead>
+                <tr>
+                    <th>Influencer name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Campaign Status</th>
+                    <th class="reason">Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Influencer name">Wade Warren</td>
+                    <td data-label="Gender">Male</td>
+                    <td data-label="Age">24</td>
+                    <td data-label="Type">Instagram</td>
+                    <td data-label="Category">Travel</td>
+                    <td data-label="Campaign Status">Assigned</td>
+                    <td data-label="Reason">-</td>
+                </tr>
+                <tr>
+                    <td data-label="Influencer name">Esther Howard</td>
+                    <td data-label="Gender">Male</td>
+                    <td data-label="Age">28</td>
+                    <td data-label="Type">Instagram</td>
+                    <td data-label="Category">Travel</td>
+                    <td data-label="Campaign Status" class="accepted">Accepted</td>
+                    <td data-label="Reason">-</td>
+                </tr>
+                <tr>
+                    <td data-label="Influencer name">Savannah Nguyen</td>
+                    <td data-label="Gender">Female</td>
+                    <td data-label="Age">35</td>
+                    <td data-label="Type">TikTok</td>
+                    <td data-label="Category">Travel</td>
+                    <td data-label="Campaign Status">Assigned</td>
+                    <td data-label="Reason">-</td>
+                </tr>
+                <tr>
+                    <td data-label="Influencer name">Dianne Russell</td>
+                    <td data-label="Gender">Male</td>
+                    <td data-label="Age">22</td>
+                    <td data-label="Type">Instagram</td>
+                    <td data-label="Category">Travel</td>
+                    <td data-label="Campaign Status" class="accepted">Accepted</td>
+                    <td data-label="Reason">-</td>
+                </tr>
+                <tr>
+                    <td data-label="Influencer name">Jerome Bell</td>
+                    <td data-label="Gender">Female</td>
+                    <td data-label="Age">30</td>
+                    <td data-label="Type">Instagram</td>
+                    <td data-label="Category">Travel</td>
+                    <td data-label="Campaign Status">Assigned</td>
+                    <td data-label="Reason">-</td>
+                </tr>
+                <tr>
+                    <td data-label="Influencer name">Kathryn Murphy</td>
+                    <td data-label="Gender">Female</td>
+                    <td data-label="Age">24</td>
+                    <td data-label="Type">TikTok</td>
+                    <td data-label="Category">Travel</td>
+                    <td data-label="Campaign Status" class="rejected">Rejected</td>
+                    <td data-label="Reason">Busy with other campaigns</td>
+                </tr>
+                <tr>
+                    <td data-label="Influencer name">Devon Lane</td>
+                    <td data-label="Gender">Female</td>
+                    <td data-label="Age">24</td>
+                    <td data-label="Type">Both</td>
+                    <td data-label="Category">Travel</td>
+                    <td data-label="Campaign Status" class="rejected">Rejected</td>
+                    <td data-label="Reason">Not interested</td>
+                </tr>
+                <tr>
+                    <td data-label="Influencer name">Darlene Robertson</td>
+                    <td data-label="Gender">Male</td>
+                    <td data-label="Age">24</td>
+                    <td data-label="Type">TikTok</td>
+                    <td data-label="Category">Travel</td>
+                    <td data-label="Campaign Status">Assigned</td>
+                    <td data-label="Reason">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

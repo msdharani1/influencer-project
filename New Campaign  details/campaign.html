@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Campaign</title>
+    <link rel="stylesheet" href="./campaign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="sidebar">
+        <div>
+            <div class="heading">
+                <div class="company">
+                    <span><i class="fa-solid fa-desktop"></i> </span><h2>Company Name</h2>
+                </div>
+                <p>Manager</p>
+            </div>
+            <ul class="menu">
+                <li><a href="/All influencers/allcampaign.html"><span><i class="fa-solid fa-house"></span></i> <span class="sm-hide">Influencers</span></a></li>
+                <li><a href="/New Campaign overview/campaign.html" class="active"><span><i class="fa-solid fa-chart-line"></i></span> <span class="sm-hide">Campaign</span></a></li>
+                <li><a href="#"><span><i class="fa-regular fa-credit-card"></i></span> <span class="sm-hide">Credit Management</span></a></li>
+                <li><a href="#"><span><i class="fa-solid fa-gear"></i></span> <span class="sm-hide">Settings</span></a></li>
+            </ul>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/40" alt="Profile Picture">
+            <span>Gavano</span>
+            <span style="margin-left: 50px; font-size: 24px; color: black; cursor: pointer; position: relative; bottom: 5px;">...</span>
+        </div>
+    </div>
+    <div class="content">
+        <header>
+            <div class="search-sort">
+                <div class="searchandsort">
+                    <input type="text" placeholder="Search" class="search">
+                    <select>
+                        <option value="sort">Sort by</option>
+                        <option value="date">Date</option>
+                        <option value="name">Name</option>
+                    </select>
+                    <div class="mail-notification">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="new-campain">
+            <div class="heading2">
+                <div class="heading-left">
+                    <i class="fa-solid fa-chevron-left" onclick="window.location.href = '/New Campaign overview/campaign.html';"></i>
+                    <h3>Round Trip to Ladakh</h3>
+                </div>
+                <div class="heading-right">
+                    <button class="btn" onclick="window.location.href = '/Assigned Influencers/index.html';">Assign to Influencers</button>
+                    <button class="btn2" onclick="window.location.href = '/Assign to influencer/index.html';">Assigned Influencers</button>
+                </div>
+            </div>
+            <div class="description">
+                <div class="des-left">
+                    <h3>Description</h3>
+                    <p class="p-test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eos repellat dolores neque dignissimos sint id quam, pariatur tempora, consectetur eaque, libero voluptates ullam aperiam? Qui laudantium doloremque alias sint?</p>
+                    <br>
+                    <div class="des-date">   
+                        <h5>Start date: </h5> <span>01/05/2024</span>
+                        <h5>End date: </h5> <span>01/05/2024</span>
+                    </div>
+                    <div class="des-links">
+                        <a href="#">Credit Score</a>
+                        <a href="#">Earnings</a>
+                    </div>
+                    <h2 class="des-img-head">Images</h2>
+                    <div class="scroll">
+                        <div class="des-img">
+                            <img src="img.jpg" alt="">
+                            <img src="img.jpg" alt="">
+                            <img src="img.jpg" alt="">
+                        </div>
+                    </div>
+                    <h2 class="des-img-head">Videos</h2>
+                    <div class="scroll">
+                        <div class="des-img">
+                            <video src="sample.mp4" controls></video>
+                            <video src="sample.mp4" controls></video>
+                            <video src="sample.mp4" controls></video>
+                        </div>
+                    </div>
+                    <h2 class="des-img-head ">Links</h2>
+                    <div class="des-btn res">
+                        <input type="text" placeholder="https://example.com">
+                        <input type="text" placeholder="https://example.com">
+                        <input type="text" placeholder="https://example.com">
+                    </div>
+                    <br>
+                    <div class="des-btn">
+                        <a href="">Sample</a>
+                        <a href="">Sample</a>
+                    </div>
+                </div>
+                <div class="des-right">
+                    <img src="img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="campaign.js"></script>
+</body>
+</html>

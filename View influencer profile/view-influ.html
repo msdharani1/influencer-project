@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Influencer profile</title>
+    <link rel="stylesheet" href="view-influ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="influ-container">
+            <div class="top-profile">
+                <div class="circle"></div>
+                <div class="squre"></div>
+                <img src="profile1.jpg" alt="">
+            </div>
+            <i class="fa-solid fa-xmark" onclick="window.location.href = '/All influencers/allcampaign.html';"></i>
+            <div class="contact-info">
+                <div class="phone">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Mobile no: <span>+91 1234567890</span></p>
+                </div>
+                <div class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>Email ID: <span>abcdxyz@gmail.com</span></p>
+                </div>
+            </div>
+            <div class="personal-info">
+                <div class="name">
+                    <h2>John Doe</h2>
+                </div>
+                <div class="age-gender">
+                    <p>Age: <span>25</span></p>
+                    <p>Gender: <span>Male</span></p>
+                </div>
+            </div>
+            <div class="social-media">
+                <div class="instagram">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                    <div class="inputs1">
+                        <label>User name: </label>
+                        <input type="text">
+                    </div>
+                    <div class="inputs2">
+                        <label>No. of followers: </label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="tiktok">
+                    <i class="fa-brands fa-tiktok"></i> Tik Tok
+                    <div class="inputs1">
+                        <label>User name: </label>
+                        <input type="text">
+                    </div>
+                    <div class="inputs2">
+                        <label>No. of followers: </label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="promote">
+                <div class="promo-title">
+                    <h4>Field of Interest to promote:</h4>
+                </div>
+                <div class="promo-list">
+                    <ul>
+                        <li>Food</li>
+                        <li>Travel</li>
+                        <li>Sports</li>
+                        <li>Fitness</li>
+                        <li>Online games</li>
+                        <li>Offline games</li>
+                        <li>Gym</li>
+                    </ul>
+                </div>
+                <div class="promo-next" onclick="scrollPromoList()">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="credit">
+                <h4>Credits:</h4>
+                <div class="credit-score flex">
+                    <p>Credit Score</p>
+                    <input type="text" placeholder="10,000 pts">
+                </div>
+                <div class="earnings flex">
+                    <p>Earnings</p>
+                    <input type="text" placeholder="$5,000">
+                </div>
+                <div class="gifts flex">
+                    <p>Gifts</p>
+                    <input type="text" placeholder="10">
+                </div>
+            </div>
+            <div class="bottom-promotion">
+                <div class="b-promo-title">
+                    <p>Complete Promotion: <span>5</span></p>
+                    <p>Current Promotion: <span>1</span></p>
+                    <p>Rejected Promotion: <span>1</span></p>
+                </div>
+                <div class="sus-btn">
+                    <a href="/Influencer Suspend Reason/response.html">Suspend</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="view-influ.js"></script>
+</body>
+</html>

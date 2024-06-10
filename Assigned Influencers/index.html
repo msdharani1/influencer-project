@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assigned Influencer - Round Trip to Ladakh</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        background-color: #fff7f5;
+    }
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        /* overflow: hidden; */
+        padding: 20px;
+    }
+    .header {
+        background: #ffe9e3;
+        padding: 20px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: centers;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 20px;
+        color: #333;
+    }
+    .header p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #666;
+    }
+    .header i{
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .assign-button {
+        display: block;
+        /* width: 200px;
+        margin: 20px auto; */
+        padding: 16px 20px;
+        background: #28a745;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0;
+    }
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background: #f4f4f4;
+    }
+    tr:hover {
+        background: #f1f1f1;
+    }
+    .accepted {
+        color: green;
+    }
+    .rejected {
+        color: red;
+    }
+    .reason {
+        width: 20%;
+    }
+    .overflow-style{
+        width: 100%;
+        overflow: auto;
+    }
+    span{
+        font-weight: 300;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: centers;
+        margin: 20px 0px;
+    }
+    .des-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.des-search-left {
+    position: relative;
+    left: -20px
+}
+.des-search-left i{
+    position: relative;
+    left: 30px;
+    color: gray;
+}
+.des-search-left input{
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    color: gray;
+    border: 1px solid gray;
+    padding-left: 35px;
+}
+.des-search-left button{
+    background-color: #ff6f00;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 33px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.des-search-left button:hover{
+    background-color: #fd9647;
+}
+.des-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.des-filter select{
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin-left: 10px;
+}
+.des-filter a{
+    padding: 5px 10px;
+    background-color: gray;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+}
+    /* Target smaller screens first */
+@media screen and (max-width: 768px) {
+    .header h1{
+        font-size: 14px;
+    }
+    header p{
+        font-size: 14px;
+    }
+    .assign-button{
+        font-size: 12px;
+        padding: 14px 10px;
+    }
+    .header i{
+        position: relative;
+        top: 0px;
+    }
+    @media only screen and (min-width: 200px) and (max-width: 400px) {
+        .header i{
+            position: relative;
+            top: 10px;
+        }
+    }
+}
+
+/* Target smaller screens first */
+@media screen and (max-width: 768px) {
+    .heading2{
+        margin-left: 0;
+    }
+    .heading-left h3{
+        font-size: 14px;
+    }
+    .heading-right{
+        flex-direction: column;
+    }
+    .heading-right .btn {
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    .heading-right .btn2 {
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    .description{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .des-right{
+        height: auto;
+        width: 100%;
+    }
+    .des-right img{
+        width: 100%;
+    }
+    .des-left{
+        width: 100%;
+    }
+    .des-date{
+        font-size: 11px;
+    }
+    .des-links a {
+        font-size: 10px;
+    }
+    .scroll{
+        width: 100%;
+        overflow: auto;
+    }
+    .res{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .title i{
+        top: 0px;
+    }
+    .des-search{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .des-search-left{
+        margin-bottom: 30px;
+        position: relative;
+        width: 100%;
+    }
+    .des-search-left input{
+        height: 30px;
+        width: 60%;
+    }
+    .des-search-left button{
+        padding: 5px 8px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .des-right img{
+        width: 80%;
+    }
+    .des-right img{
+        top: 50px;
+    }
+    .des-search-left input{
+        height: 30px;
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+    .des-search-left input{
+        height: 30px;
+        width: 400px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Assign to Influencer - <span>Round Trip to Ladakh</span></h1>
+        <i class="fa-solid fa-xmark" onclick="window.location.href = '/New Campaign  details/campaign.html';"></i>
+    </div>
+    <des class="des-search">
+        <div class="des-search-left">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search on going campaigns">
+            <button>Search</button>
+        </div>
+        <div class="des-filter">
+            <i class="fa-solid fa-filter"></i> Filter
+            <select name="" id="">
+                <option value="Gender">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+            <select name="" id="">
+                <option value="Age">Age</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="v">35-44</option>
+                <option value="45+">45+</option>
+            </select>
+            <select name="" id="">
+                <option value="Type">Type</option>
+                <option value="Instagram">Instagram</option>
+                <option value="TikTok">TikTok</option>
+            </select>
+            <select name="" id="">
+                <option value="Category">Category</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Care - Make-up">Care - Make-up</option>
+                <option value="Technology">Technology</option>
+                <option value="Gezi">Gezi</option>
+                <option value="Mother-child">Mother-child</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Economy">Economy</option>
+                <option value="Food">Food</option>
+                <option value="Movie - TV Series">Movie - TV Series</option>
+                <option value="Pet">Pet</option>
+                <option value="Discount">Discount</option>
+                <option value="Decoration">Decoration</option>
+                <option value="Celebrity">Celebrity</option>
+                <option value="Magazine">Magazine</option>
+            </select>
+            <select name="" id="">
+                <option value="Followers">Followers</option>
+                <option value="Below 1k">Below 1k</option>
+                <option value="1k-25k">1k-25k</option>
+                <option value="50k-100k">50k-100k</option>
+                <option value="above 100K">above 100K</option>
+            </select>
+            <a href="">Clear</a>
+        </div>
+    </des>
+    <header>
+        <p>No. of influencer (40)</p>
+        <a href="#" class="assign-button">Assign</a>
+    </header>
+    <div class="overflow-style">
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>Influencer name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Type</th>
+                    <th>Followers</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td >Wade Warren</td>
+                    <td>Male</td>
+                    <td>24</td>
+                    <td>Instagram</td>
+                    <td>200k</td>
+                    <td>Travel</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td >Wade Warren</td>
+                    <td>Male</td>
+                    <td>24</td>
+                    <td>Instagram</td>
+                    <td>200k</td>
+                    <td>Travel</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td >Wade Warren</td>
+                    <td>Male</td>
+                    <td>24</td>
+                    <td>Instagram</td>
+                    <td>200k</td>
+                    <td>Travel</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td >Wade Warren</td>
+                    <td>Male</td>
+                    <td>24</td>
+                    <td>Instagram</td>
+                    <td>200k</td>
+                    <td>Travel</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td >Wade Warren</td>
+                    <td>Male</td>
+                    <td>24</td>
+                    <td>Instagram</td>
+                    <td>200k</td>
+                    <td>Travel</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td >Wade Warren</td>
+                    <td>Male</td>
+                    <td>24</td>
+                    <td>Instagram</td>
+                    <td>200k</td>
+                    <td>Travel</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td >Wade Warren</td>
+                    <td>Male</td>
+                    <td>24</td>
+                    <td>Instagram</td>
+                    <td>200k</td>
+                    <td>Travel</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td >Wade Warren</td>
+                    <td>Male</td>
+                    <td>24</td>
+                    <td>Instagram</td>
+                    <td>200k</td>
+                    <td>Travel</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
