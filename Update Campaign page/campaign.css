@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+}
+.company{
+    display: flex;
+}
+.heading h2{
+    position: relative;
+    top: -7px;
+}
+.heading i{
+    font-size: 24px;
+    padding-right: 10px;
+}
+.heading p{
+    position: relative;
+    bottom:  40px;
+    left: 37px;
+}
+.sidebar {
+    width: 250px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+.sidebar h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+}
+.sidebar .menu li {
+    margin: 15px 0;
+}
+.sidebar .menu li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    padding: 10px 0px;
+}
+.sidebar .menu li a.active,
+.sidebar .menu li a:hover {
+    background-color: #ff6f00;
+    color: #fff;
+    border-radius: 10px;
+}
+.sidebar .menu li a span {
+    margin-left: 10px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+.content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.search-sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content header input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0px 0px 5px;
+}
+.content header select {
+    padding: 7px 8px;
+    border: 1px solid #ccc;
+    border-radius: 0px 5px 5px 0px;
+}
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+.form-section .actions button{
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.form-section .actions button:hover{
+    background-color: #ff6d059d;
+}
+.form-section .actions button.delete {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid gray;
+}
+.form-section .actions button.delete:hover{
+    background-color: #e2e2e2;
+}
+.form-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-section h2 {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group textarea,
+.form-group input[type="date"] {
+    width: 98.5%;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group .upload-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: row;
+    gap: 10px;
+}
+.form-group .upload-box button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group .upload-box button:hover{
+    background-color: rgba(0, 128, 0, 0.527);
+}
+.form-group .upload-box span {
+    font-size: 12px;
+    color: #666;
+}
+.search-sort{
+    width: 100%;
+}
+.searchandsort{
+    width: 100%;
+}
+.search{
+    width: 60%;
+}
+.mail-notification i{
+    color: gray;
+    font-size: 20px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.mail-notification i:hover{
+    color: black;
+}
+.searchandsort{
+    display: flex;
+    align-items: center;
+}
+.startdate p{
+    width:80%;
+}
+.enddate p{
+    width:80%;
+}
+.startdate{
+    display: flex;
+    font-size: 15px;
+    gap: 10px;
+    align-items: center;
+}
+.startdate input{
+    height: 10px;
+}
+.enddate input{
+    height: 10px;
+}
+.enddate{
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.form-group span{
+    color: red;
+}
+
+/* Target smaller screens first */
+@media screen and (max-width: 768px) {
+    .sm-hide{
+      display: none; /* Hide menu text on small screens */
+    }
+    .sidebar ul{
+        margin-top: 60px;
+    }
+    .sidebar .menu li a.active, .sidebar .menu li a:hover{
+        margin: -10px;
+    }
+    .sidebar .menu li a{
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+    }
+    .sidebar{
+        width: 50px;
+    }
+    .heading p{
+        display: none;
+    }
+    .company span i{
+        text-align: center;
+    }
+    .company h2{
+        display: none;
+    } 
+    .profile span{
+        display: none;
+    }
+    .form-section  h2{
+        font-size: 14px;
+    }
+    .form-section h2 .actions button{
+        padding: 5px;
+    }
+    .actions{
+        display: flex;
+        gap: 10px;
+    }
+    .dateselection{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-group .upload-box{
+        flex-direction: column;
+    }
+    .search{
+        width: auto
+    }
+    .mail-notification i {
+        /* position: absolute;
+        right: 10px;
+        top: 25px; */
+        margin-left: 15px;
+    }
+    .content header input[type="text"] {
+        width: 120px;
+    }
+    .info-left{
+        font-size: 14px;
+    }
+    .info-right p{
+        font-size: 14px;
+    }
+    .before{
+        flex-direction: column!important;
+    }
+    .info-right p{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 14px;
+        width: 50px!important; /* Set the width of the container */
+        white-space: nowrap; /* Prevent wrapping to next line */
+        overflow: hidden; /* Hide overflowing content */
+        text-overflow: ellipsis; /* Add ellipsis to overflowing text */
+    }
+    .form-group .upload-box button{
+        font-size: 10px;
+    }
+        
+    .content{
+        width: 90%!important;
+    }
+    .sidebar{
+        width: 10%!important;
+    }
+  }
+  .sidebar .menu li a.active:hover{
+    background-color: #f7954adc!important;
+  }
+  .dateselection{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  /* Style for larger screens */
+  @media screen and (min-width: 768px) {
+    .sm-hide{
+      display: none; /* Hide menu icon on large screens */
+    }
+  
+    .sm-hide{
+      display: inline-block; /* Show menu text on large screens */
+    }
+    
+  }
+
+.info{
+    /* width: 150px; */
+    height: 60px;
+    background-color: rgb(253, 199, 207);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+.info-left{
+    font-size: 24px;
+}
+.info-right{
+    display: flex;
+    flex-direction: column;
+}
+.info-right p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 14px;
+    width: 150px; /* Set the width of the container */
+    white-space: nowrap; /* Prevent wrapping to next line */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Add ellipsis to overflowing text */
+}
+.before{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.info-close{
+    cursor: pointer;
+}
+
+#upload-box-2-2,
+#upload-box-2-3{
+    display: none;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center button{
+    margin: 15px 30px;
+    background-color: rgb(253, 199, 207)!important;
+    color: #000!important;
+}
+#upload-box-3-2,
+#upload-box-3-3{
+    display: none;
+}
+
+.content{
+    width: 83%;
+}
+.sidebar{
+    width: 17%;
+}

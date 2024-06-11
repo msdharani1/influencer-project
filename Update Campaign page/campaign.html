@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Campaign</title>
+    <title>Update Campaign</title>
     <link rel="stylesheet" href="./campaign.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -46,30 +46,19 @@
             </div>
         </header>
         <div class="form-section">
-            <h2>Create Campaign
+            <h2>Update Campaign
             </h2>
             <form>
                 <div class="form-group">
                     <label for="title-image">Title Image</label>
                     <div class="upload-box" id="upload-box-1">
-                        <div class="before">
+                        <div class="before" style="display: none;" id="file-input-before-1">
                             <button type="button" id="file-input-button-1"> <i class="fa-solid fa-upload"></i> Upload Image</button>
                             <input type="file" id="file-inputs-1" style="display: none;">
                             <span>(Max Size 5MB)</span>
                         </div>
-                        <div class="after" style="display: none;">
-                            <div class="info">
-                                <div class="info-left">
-                                    <i class="fa-regular fa-image"></i>
-                                </div>
-                                <div class="info-right">
-                                    <p>Image Title</p>
-                                    <p>1.3MB</p>
-                                </div>
-                                <div class="info-close">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </div>
-                            </div>
+                        <div class="after" style="display: block;" id="file-input-after-1">
+                            
                         </div>
                     </div>
                 </div>
@@ -97,64 +86,31 @@
                 <div class="form-group">
                     <label>Upload Images</label>
                     <div class="upload-container" id="upload-container-2">
-                        <div class="upload-box" id="upload-box-2-1">
-                            <div class="before">
+                        <div class="upload-box" id="upload-box-2-1" style="display: flex;">
+                            <div class="before" style="display: none;" id="file-input-before-2-1">
                                 <button type="button" class="file-input-button" id="file-input-button-2-1"><i class="fa-solid fa-upload"></i> Upload Image</button>
                                 <input type="file" class="file-inputs" id="file-inputs-2-1" style="display: none;">
                                 <span style="text-align: center;">Max 10MB for each file <br>(Max 3 images to be uploaded)</span>
                             </div>
-                            <div class="after upload-box" style="display: none;">
-                                <div class="info">
-                                    <div class="info-left">
-                                        <i class="fa-regular fa-image"></i>
-                                    </div>
-                                    <div class="info-right">
-                                        <p>Image Title</p>
-                                        <p>1.3MB</p>
-                                    </div>
-                                    <div class="info-close">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </div>
-                                </div>
+                            <div class="after upload-box" id="file-input-after-2-1" style="display: block;">
+                                
                             </div>
-                            <div class="upload-box line-hide" id="upload-box-2-2">
-                                <div class="before center">
+                            <div class="upload-box line-hide" id="upload-box-2-2" style="display: block;">
+                                <div class="before center" style="display: none" id="file-input-before-2-2">
                                     <button type="button" class="file-input-button" id="file-input-button-2-2"><i class="fa-solid fa-plus"></i></button>
                                     <input type="file" class="file-inputs" id="file-inputs-2-2" style="display: none;">
                                 </div>
-                                <div class="after" style="display: none;">
-                                    <div class="info">
-                                        <div class="info-left">
-                                            <i class="fa-regular fa-image"></i>
-                                        </div>
-                                        <div class="info-right">
-                                            <p>Image Title</p>
-                                            <p>1.3MB</p>
-                                        </div>
-                                        <div class="info-close">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-                                    </div>
+                                <div class="after" style="display: block;" id="file-input-after-2-2">
+                            
                                 </div>
                             </div>
-                            <div class="upload-box line-hide" id="upload-box-2-3">
-                                <div class="before center">
+                            <div class="upload-box line-hide" id="upload-box-2-3" style="display: block;">
+                                <div class="before center" style="display: none;" id="file-input-before-2-3">
                                     <button type="button" class="file-input-button" id="file-input-button-2-3"><i class="fa-solid fa-plus"></i></button>
                                     <input type="file" class="file-inputs" id="file-inputs-2-3" style="display: none;">
                                 </div>
-                                <div class="after" style="display: none;">
-                                    <div class="info">
-                                        <div class="info-left">
-                                            <i class="fa-regular fa-image"></i>
-                                        </div>
-                                        <div class="info-right">
-                                            <p>Image Title</p>
-                                            <p>1.3MB</p>
-                                        </div>
-                                        <div class="info-close">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-                                    </div>
+                                <div class="after" style="display: block;" id="file-input-after-2-3">
+                                    
                                 </div>
                             </div>
                         </div>
@@ -163,64 +119,31 @@
                 <div class="form-group">
                     <label>Upload Videos</label>
                     <div class="upload-container" id="upload-container-3">
-                        <div class="upload-box" id="upload-box-3-1">
-                            <div class="before">
-                                <button type="button" class="file-input-button" id="file-input-button-3-1"><i class="fa-solid fa-upload"></i> Upload Video</button>
+                        <div class="upload-box" id="upload-box-3-1" style="display: flex;">
+                            <div class="before" style="display: none;" id="file-input-before-3-1">
+                                <button type="button" class="file-input-button" id="file-input-button-3-1"><i class="fa-solid fa-upload"></i> Upload Image</button>
                                 <input type="file" class="file-inputs" id="file-inputs-3-1" style="display: none;">
-                                <span style="text-align: center;">Max 20MB for each file <br>(Max 3 videos to be uploaded)</span>
+                                <span style="text-align: center;">Max 10MB for each file <br>(Max 3 images to be uploaded)</span>
                             </div>
-                            <div class="after" style="display: none;">
-                                <div class="info">
-                                    <div class="info-left">
-                                        <i class="fa-regular fa-circle-play"></i>
-                                    </div>
-                                    <div class="info-right">
-                                        <p>Image Title</p>
-                                        <p>1.3MB</p>
-                                    </div>
-                                    <div class="info-close">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </div>
-                                </div>
+                            <div class="after upload-box" style="display: block;" id="file-input-after-3-1">
+                                
                             </div>
-                            <div class="upload-box" id="upload-box-3-2">
-                                <div class="before center">
+                            <div class="upload-box line-hide" id="upload-box-3-2" style="display: block;">
+                                <div class="before center" style="display: none" id="file-input-before-3-2">
                                     <button type="button" class="file-input-button" id="file-input-button-3-2"><i class="fa-solid fa-plus"></i></button>
                                     <input type="file" class="file-inputs" id="file-inputs-3-2" style="display: none;">
                                 </div>
-                                <div class="after" style="display: none;">
-                                    <div class="info">
-                                        <div class="info-left">
-                                            <i class="fa-regular fa-circle-play"></i>
-                                        </div>
-                                        <div class="info-right">
-                                            <p>Image Title</p>
-                                            <p>1.3MB</p>
-                                        </div>
-                                        <div class="info-close">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-                                    </div>
+                                <div class="after" style="display: block;" id="file-input-after-3-2">
+                                    
                                 </div>
                             </div>
-                            <div class="upload-box" id="upload-box-3-3">
-                                <div class="before center">
+                            <div class="upload-box line-hide" id="upload-box-3-3" style="display: block;">
+                                <div class="before center" style="display: none;" id="file-input-before-3-3">
                                     <button type="button" class="file-input-button" id="file-input-button-3-3"><i class="fa-solid fa-plus"></i></button>
                                     <input type="file" class="file-inputs" id="file-inputs-3-3" style="display: none;">
                                 </div>
-                                <div class="after" style="display: none;">
-                                    <div class="info">
-                                        <div class="info-left">
-                                            <i class="fa-regular fa-circle-play"></i>
-                                        </div>
-                                        <div class="info-right">
-                                            <p>Image Title</p>
-                                            <p>1.3MB</p>
-                                        </div>
-                                        <div class="info-close">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </div>
-                                    </div>
+                                <div class="after" style="display: block;" id="file-input-after-3-3">
+                                    
                                 </div>
                             </div>
                         </div>
@@ -232,7 +155,7 @@
                 </div>
                 <div class="actions">
                     <button class="delete">Delete</button>
-                    <button class="create">Create</button>
+                    <button class="create">Update</button>
                 </div>
             </form>
         </div>
